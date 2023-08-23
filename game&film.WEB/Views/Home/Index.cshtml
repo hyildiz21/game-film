@@ -1,0 +1,82 @@
+﻿@{
+   
+
+}
+
+
+
+<html>
+<body>
+
+
+    <form>
+
+
+        <div class="text-center">
+            <h1 class="text-gray-400 fs-2hx">Welcome</h1>
+
+            <input id="nameInput" name="name" />
+            <input id="lastnameInput" name="lastname" />
+            <input id="usernameInput" name="username" />
+            <input id="passwordInput" name="password" />
+            <input id="email" name="email" />
+            <input id="userIdInput" name="userId" />
+
+
+            <button type="button" class="btn btn-danger" onclick="GetUserJson()">Kullanıcı Getir</button>
+            <button type="submit" class="btn btn-success" asp-action="AddUser" asp-controller="Home">Kullanıcı Ekle</button>
+        </div>
+
+        <div>
+            <p class="fw-bold text-danger fs-1" style="margin:25px; padding: 15px">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+                This is a passage of Latin text that has been scrambled and used as placeholder text in the printing and typesetting industry since the 1500s. It is not actually a meaningful sentence, but it is still useful for previewing layouts and visual mockups.
+
+                If you want a longer dummy text, you can use a Lorem Ipsum generator. There are many of these available online, and they can generate text of any length and style.
+            </p>
+        </div>
+
+    </form>
+
+</body>
+</html>
+
+<script>
+
+    function GetUserJson() {
+        $.ajax({
+            url: '@Url.Action("GetUser", "Home")',
+            type: "GET",
+            data: {},
+            success: function (data) {
+
+                if (data == null) {
+                    alert("Boş data");
+                }
+                else {
+                    $.each(data, function (i, item) {
+
+                        document.getElementById("nameInput").value = item.name;
+                        document.getElementById("lastnameInput").value = item.lastname;
+                        document.getElementById("usernameInput").value = item.username;
+                        document.getElementById("passwordInput").value = item.password;
+                        document.getElementById("email").value = item.email;
+                        document.getElementById("userIdInput").value = item.userId;
+
+
+
+
+                    });
+                }
+
+            }
+        });
+    }
+
+
+
+
+</script>
+
+
