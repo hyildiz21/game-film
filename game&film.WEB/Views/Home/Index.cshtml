@@ -12,7 +12,7 @@
     <form>
 
 
-        <div class="text-center">
+@*         <div class="text-center">
             <h1 class="text-gray-400 fs-2hx">Welcome</h1>
 
             <input id="nameInput" name="name" />
@@ -22,20 +22,66 @@
             <input id="email" name="email" />
             <input id="userIdInput" name="userId" />
 
+            <input type="text" class="form-control form-control-solid bg-hover-light-info text-hover-dark" placeholder="name@example.com" />
 
-            <button type="button" class="btn btn-danger" onclick="GetUserJson()">Kullanıcı Getir</button>
-            <button type="submit" class="btn btn-success" asp-action="AddUser" asp-controller="Home">Kullanıcı Ekle</button>
-        </div>
 
-        <div>
-            <p class="fw-bold text-danger fs-1" style="margin:25px; padding: 15px">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            <button type="button" class="btn btn-light-danger" onclick="GetUserJson()">Kullanıcı Getir</button>
+            <button type="submit" class="btn btn-light-success" asp-action="AddUser" asp-controller="Home">Kullanıcı Ekle</button>
 
-                This is a passage of Latin text that has been scrambled and used as placeholder text in the printing and typesetting industry since the 1500s. It is not actually a meaningful sentence, but it is still useful for previewing layouts and visual mockups.
 
-                If you want a longer dummy text, you can use a Lorem Ipsum generator. There are many of these available online, and they can generate text of any length and style.
-            </p>
-        </div>
+        </div> *@
+
+
+
+
+		<div  class="row" style="justify-content:center; align-items:center">
+
+		<div class="card card-flush shadow-sm col-9" style="margin:20px; padding:15px; background-color: #E0ECDE;">
+			<div class="card-header">
+				<h3 class="card-title"> <i> QUOTE OF DAY </i></h3>
+
+				<div class="card-toolbar">
+					
+				</div>
+			</div>
+
+			<div class="card-body py-5 row">
+				<div>
+                        <p class="fw-bold fs-1" style="margin:25px; padding: 15px; color:#2D376C">
+						<i>	
+						"why do we fall bruce"
+						<br />
+						"So that we can learn to pick ourselves up."
+						</i>
+					</p>
+				</div>
+			</div>
+
+			<div class="card-footer">
+				info here
+
+			</div>
+		</div>
+
+		</div>
+		
+		@Html.Partial("~/Views/Partial/PartialMovies.cshtml")
+
+		@Html.Partial("~/Views/Partial/PartialSeries.cshtml")
+
+		@Html.Partial("~/Views/Partial/PartialGames.cshtml")
+
+		@Html.Partial("~/Views/Partial/PartialBooks.cshtml")
+
+		@Html.Partial("~/Views/Partial/PartialMusics.cshtml")
+
+
+
+
+
+
+
+
 
     </form>
 
@@ -43,6 +89,7 @@
 </html>
 
 <script>
+	
 
     function GetUserJson() {
         //test
@@ -74,6 +121,8 @@
             }
         });
     }
+
+
 
 
 
