@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace game_film.WEB.Models
 {
-    public class UserWebModel
+    public class UserModel
     {
         public int userId { get; set; }
         public string name { get; set; }

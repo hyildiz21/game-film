@@ -1,11 +1,13 @@
 ﻿using game_film.DB.Context;
 using game_film.DB.Models;
 using game_film.WEB.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
 namespace game_film.WEB.Controllers
 {
+    [Authorize]
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
@@ -29,7 +31,7 @@ namespace game_film.WEB.Controllers
 
         }
 
-        public IActionResult AddUser(UserWebModel userWebModel)
+        public IActionResult AddUser(UserModel userWebModel)
         {
             GameAndFilmContext context = new GameAndFilmContext();
 

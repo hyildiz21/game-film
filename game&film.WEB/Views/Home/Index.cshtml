@@ -1,5 +1,5 @@
 ﻿@{
-   
+
 
 }
 
@@ -9,77 +9,101 @@
 <body>
 
 
+
+
     <form>
 
 
-@*         <div class="text-center">
-            <h1 class="text-gray-400 fs-2hx">Welcome</h1>
+        @*         <div class="text-center">
+        <h1 class="text-gray-400 fs-2hx">Welcome</h1>
 
-            <input id="nameInput" name="name" />
-            <input id="lastnameInput" name="lastname" />
-            <input id="usernameInput" name="username" />
-            <input id="passwordInput" name="password" />
-            <input id="email" name="email" />
-            <input id="userIdInput" name="userId" />
+        <input id="nameInput" name="name" />
+        <input id="lastnameInput" name="lastname" />
+        <input id="usernameInput" name="username" />
+        <input id="passwordInput" name="password" />
+        <input id="email" name="email" />
+        <input id="userIdInput" name="userId" />
 
-            <input type="text" class="form-control form-control-solid bg-hover-light-info text-hover-dark" placeholder="name@example.com" />
+        <input type="text" class="form-control form-control-solid bg-hover-light-info text-hover-dark" placeholder="name@example.com" />
 
 
-            <button type="button" class="btn btn-light-danger" onclick="GetUserJson()">Kullanıcı Getir</button>
-            <button type="submit" class="btn btn-light-success" asp-action="AddUser" asp-controller="Home">Kullanıcı Ekle</button>
+        <button type="button" class="btn btn-light-danger" onclick="GetUserJson()">Kullanıcı Getir</button>
+        <button type="submit" class="btn btn-light-success" asp-action="AddUser" asp-controller="Home">Kullanıcı Ekle</button>
 
 
         </div> *@
-
-
-
-
-		<div  class="row" style="justify-content:center; align-items:center">
-
-		<div class="card card-flush shadow-sm col-9" style="margin:20px; padding:15px; background-color: #E0ECDE;">
-			<div class="card-header">
-				<h3 class="card-title"> <i> QUOTE OF DAY </i></h3>
-
-				<div class="card-toolbar">
-					
-				</div>
-			</div>
-
-			<div class="card-body py-5 row">
-				<div>
-                        <p class="fw-bold fs-1" style="margin:25px; padding: 15px; color:#2D376C">
-						<i>	
-						"why do we fall bruce"
-						<br />
-						"So that we can learn to pick ourselves up."
-						</i>
-					</p>
-				</div>
-			</div>
-
-			<div class="card-footer">
-				info here
-
-			</div>
-		</div>
-
-		</div>
-		
-		@Html.Partial("~/Views/Partial/PartialMovies.cshtml")
         
 
-		@Html.Partial("~/Views/Partial/PartialSeries.cshtml")
-
-		@Html.Partial("~/Views/Partial/PartialGames.cshtml")
-
-		@Html.Partial("~/Views/Partial/PartialBooks.cshtml")
-
-		@Html.Partial("~/Views/Partial/PartialMusics.cshtml")
 
 
+        <div class="row" style="justify-content:center; align-items:center" id="usage" data-kt-scroll-offset="85">
+
+            <div class="card card-flush shadow-sm col-9" style="margin:20px; padding:15px; background-color: #E0ECDE;">
+                <div class="card-header">
+                    <h3 class="card-title"> <i> QUOTE OF DAY </i></h3>
+
+                    <div class="card-toolbar">
+
+                        
+                    </div>
+                </div>
+
+                <div class="card-body py-5 row">
+                    <div>
+                        <p class="fw-bold fs-1" style="margin:25px; padding: 15px; color:#2D376C">
+                            <i>
+                                "why do we fall bruce"
+                                <br />
+                                "So that we can learn to pick ourselves up."
+                            </i>
+                        </p>
+
+                        
+                    </div>
+
+
+                </div>
+
+                <div class="card-footer">
+                    info here
+
+                </div>
+            </div>
+
+        </div>
+
+        @Html.Partial("~/Views/Partial/PartialMovies.cshtml")
+
+
+        @Html.Partial("~/Views/Partial/PartialSeries.cshtml")
+
+        @Html.Partial("~/Views/Partial/PartialGames.cshtml")
+
+        @Html.Partial("~/Views/Partial/PartialBooks.cshtml")
+
+        @Html.Partial("~/Views/Partial/PartialMusics.cshtml")
 
 
 
+        <a style="display: block;
+                position: fixed;
+                bottom: 20px;
+                right: 20px;
+                z-index: 1;
+                border: none;
+                outline: none;
+                cursor: pointer;
+                padding: 0px;
+                width: 40px;
+                height: 40px;
+justify-content:center;
+align-items:center;"
+        href="#usage" class="btn btn-primary" data-kt-scroll-toggle>
+            <i class="ki-duotone ki-up text-white fs-2 fw-bold">
+            </i>
+    </a>
+
+  
 
 
 
@@ -90,7 +114,7 @@
 </html>
 
 <script>
-	
+
 
     function GetUserJson() {
         //test
@@ -122,8 +146,6 @@
             }
         });
     }
-
-
 
 
 

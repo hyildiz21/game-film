@@ -1,0 +1,256 @@
+﻿@{
+    Layout = null;
+}
+
+
+<html lang="en">
+<!--begin::Head-->
+<head>
+    <base href="../../../" />
+    <title>Game & Film</title>
+    <meta charset="utf-8" />
+    <meta name="description" content="GMS" />
+    <meta name="keywords" content="Games, movies, series, movies and musics" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="GMS" />
+    <meta property="og:url" content="https://keenthemes.com/metronic" />
+    <meta property="og:site_name" content="Keenthemes | Metronic" />
+    <link rel="canonical" href="https://preview.keenthemes.com/metronic8" />
+    <link rel="shortcut icon" href="assets/media/logos/gaming.ico" />
+    <!--begin::Fonts(mandatory for all pages)-->
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+    <!--end::Fonts-->
+    <!--begin::Global Stylesheets Bundle(mandatory for all pages)-->
+    <link href="assets/plugins/global/plugins.bundle.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/style.bundle.css" rel="stylesheet" type="text/css" />
+    <!--end::Global Stylesheets Bundle-->
+</head>
+<!--end::Head-->
+<!--begin::Body-->
+<body id="kt_body" class="app-blank" style="font-family: 'Bree Serif', serif; ">
+    <!--begin::Theme mode setup on page load-->
+    <script>var defaultThemeMode = "light"; var themeMode; if (document.documentElement) { if (document.documentElement.hasAttribute("data-bs-theme-mode")) { themeMode = document.documentElement.getAttribute("data-bs-theme-mode"); } else { if (localStorage.getItem("data-bs-theme") !== null) { themeMode = localStorage.getItem("data-bs-theme"); } else { themeMode = defaultThemeMode; } } if (themeMode === "system") { themeMode = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light"; } document.documentElement.setAttribute("data-bs-theme", themeMode); }</script>
+    <!--end::Theme mode setup on page load-->
+    <!--begin::Root-->
+    <div class="d-flex flex-column flex-root" id="kt_app_root">
+        <!--begin::Authentication - Sign-in -->
+        <div class="d-flex flex-column flex-lg-row flex-column-fluid">
+            <!--begin::Body-->
+            <div class="d-flex flex-column flex-lg-row-fluid w-lg-50 p-10 order-2 order-lg-1" style="background-image:url(assets/media/auth/bg9-dark.jpg); ">
+                <!--begin::Form-->
+                <div class="d-flex flex-center flex-column flex-lg-row-fluid">
+                    <!--begin::Wrapper-->
+                    <div class="w-lg-500px p-10">
+                        <!--begin::Form-->
+                        <form>
+                            <!--begin::Heading-->
+                            <div class="text-center mb-11">
+                                <div class="d-flex flex-center mb-15">
+                                    <a href="#">
+                                        <img src="~/assets/media/auth/gaming.png" class="max-h-20px" alt="" style="width:30%">
+                                    </a>
+                                </div>
+
+
+                                <!--begin::Title-->
+                                <h1 class="text-white fw-bolder mb-3">Kayıt Ol</h1>
+                                <!--end::Title-->
+                                <!--begin::Subtitle-->
+                                <div class="text-white fw-semibold fs-5">Oyunlar, Filmler, Diziler, Kitaplar ve Müzikler</div>
+                                <!--end::Subtitle=-->
+                            </div>
+                            <!--begin::Heading-->
+                            <!--begin::Login options-->
+                            <!--end::Login options-->
+                            <!--begin::Separator-->
+                            <div class="separator separator-content my-14">
+                                <span class="w-200px text-gray-500 fw-semibold">  <a href="\" id="kt_login_signup" class="link-primary font-weight-bold fs-5">Anasayfaya Git</a></span>
+                            </div>
+                            <!--end::Separator-->
+
+                            <!--begin: Ad-->
+                            <div class="fv-row mb-8">
+                           
+                                <div class="input-group mb-8 h-auto text-white placeholder-white bg-dark rounded-pill border-0">
+                                    <span class="input-group-text h-auto bg-dark rounded-pill border-0" id="basic-addon1">
+
+                                        <i class="ki-duotone ki-information-2 fs-2 text-white">
+                                            <span class="path1"></span>
+                                            <span class="path2"></span>
+                                            <span class="path3"></span>
+                                        </i>
+
+                                    </span>
+                                    <input maxlength="100" id="Name" type="text" placeholder="Ad" name="name" autocomplete="off" class="form-control text-white placeholder-white bg-dark rounded-pill border-0 " aria-describedby="basic-addon1" />
+
+                                </div>
+                                
+
+                            </div>
+                            <!--end: Ad-->
+
+                            <!--begin: Soyad-->
+                            <div class="fv-row mb-8">
+                                 
+                                <div class="input-group mb-8 h-auto text-white placeholder-white bg-dark rounded-pill border-0">
+                                    <span class="input-group-text h-auto bg-dark rounded-pill border-0" id="basic-addon1">
+                                        <i class="ki-duotone ki-information-2 fs-2 text-white">
+                                            <span class="path1"></span>
+                                            <span class="path2"></span>
+                                            <span class="path3"></span>
+                                        </i>
+                                    </span>
+                                    <input maxlength="100" id="Lastname" type="text" placeholder="Soyad" name="lastname" autocomplete="off" class="form-control text-white placeholder-white bg-dark rounded-pill border-0"  aria-describedby="basic-addon1" />
+
+                                </div>
+                            </div>
+                            <!--end: Soyad-->
+
+                            <!--begin: email-->
+                            <div class="fv-row mb-8">
+                        
+
+                                <div class="input-group mb-8 h-auto text-white placeholder-white bg-dark rounded-pill border-0">
+                                    <span class="input-group-text h-auto bg-dark rounded-pill border-0" id="basic-addon1">
+                                        <i class="ki-duotone ki-sms fs-2 text-white">
+                                            <span class="path1"></span>
+                                            <span class="path2"></span>
+                                        </i>
+                                    </span>
+                                    <input id="Email" maxlength="100" type="email" placeholder="E-Posta" name="email" autocomplete="off" class="form-control text-white placeholder-white bg-dark rounded-pill border-0" aria-describedby="basic-addon1" />
+
+                                </div>
+                            </div>
+                            <!--end: email-->
+
+                            <!--begin: Kullanıcı Adı-->
+                            <div class="fv-row mb-8">                           
+                                <div class="input-group mb-8 h-auto text-white placeholder-white bg-dark rounded-pill border-0">
+                                    <span class="input-group-text h-auto bg-dark rounded-pill border-0" id="basic-addon1">
+                                        <i class="ki-duotone ki-profile-circle fs-2 text-white">
+                                            <span class="path1"></span>
+                                            <span class="path2"></span>
+                                            <span class="path3"></span>
+                                        </i>
+                                    </span>
+                                    <input maxlength="20" id="Username" type="text" name="username" autocomplete="off" class="form-control text-white placeholder-white bg-dark rounded-pill border-0" placeholder="Kullanıcı Adı" aria-describedby="basic-addon1" />
+                                </div>
+                            </div>
+                            <!--end: Kullanıcı Adı-->
+
+                            <!--begin: Şifre-->
+                            <div class="fv-row mb-8">
+                                                          
+                                <div class="input-group mb-8 h-auto text-white placeholder-white bg-dark rounded-pill border-0">
+                                    <span class="input-group-text h-auto bg-dark rounded-pill border-0" id="basic-addon1">
+                                        <i class="ki-duotone ki-lock-3 fs-2 text-white">
+                                            <span class="path1"></span>
+                                            <span class="path2"></span>
+                                            <span class="path3"></span>
+                                        </i>
+                                    </span>
+                                    <input maxlength="20" id="Password" name="password" type="password" class="form-control text-white placeholder-white bg-dark rounded-pill border-0" placeholder="Şifre" autocomplete="off" aria-describedby="basic-addon1" />
+
+                                </div>
+                        
+                            </div>
+                            <!--end: Şifre-->
+
+
+
+
+                            <!--begin::Wrapper-->
+                            <!--end::Wrapper-->
+
+                            <!--begin::Submit button-->
+                            <div class="d-grid mb-10" >
+                                <a href="#" class="btn btn-icon-info btn btn-light-info btn-text-info bg-light hover-elevate-down">
+                                    <i class="ki-duotone ki-emoji-happy fs-2">
+                                        <span class="path1"></span>
+                                        <span class="path2"></span>
+                                        <span class="path3"></span>
+                                        <span class="path4"></span>
+                                    </i>
+
+                                    Kayıt Ol
+                                </a>
+                            </div>
+                            <!--end::Submit button-->
+                            <!--begin::Sign up-->
+
+                            
+
+                            <!--end::Sign up-->
+                        </form>
+                        <!--end::Form-->
+                    </div>
+                    <!--end::Wrapper-->
+                </div>
+                <!--end::Form-->
+
+            </div>
+
+            <!--end::Body-->
+        </div>
+        <!--end::Authentication - Sign-in-->
+    </div>
+    <!--end::Root-->
+    <!--begin::Javascript-->
+
+    <script>var hostUrl = "assets/";</script>
+    <!--begin::Global Javascript Bundle(mandatory for all pages)-->
+    <script src="assets/plugins/global/plugins.bundle.js"></script>
+    <script src="assets/js/scripts.bundle.js"></script>
+    <!--end::Global Javascript Bundle-->
+    <!--begin::Custom Javascript(used for this page only)-->
+    <script src="assets/js/custom/authentication/sign-in/general.js"></script>
+
+
+    <!--end::Custom Javascript-->
+    <!--end::Javascript-->
+</body>
+<!--end::Body-->
+</html>
+
+
+
+
+<script>
+
+    $('#Name').maxlength({
+        placement: "top-right",
+        threshold: 100,
+        warningClass: "badge badge-info",
+        limitReachedClass: "badge badge-success"
+    });
+
+    $('#Lastname').maxlength({
+        placement: "top-right",
+        threshold: 100,
+        warningClass: "badge badge-info",
+        limitReachedClass: "badge badge-success"
+    });
+
+    $('#Email').maxlength({
+        placement: "top-right",
+        threshold: 100,
+        warningClass: "badge badge-info",
+        limitReachedClass: "badge badge-success"
+    });
+
+    $('#Username').maxlength({
+        placement: "top-right",
+        threshold: 20,
+        warningClass: "badge badge-info",
+        limitReachedClass: "badge badge-success"
+    });
+
+    $('#Password').maxlength({
+        placement: "top-right",
+        threshold: 20,
+        warningClass: "badge badge-info",
+        limitReachedClass: "badge badge-success"
+    });
+</script>
