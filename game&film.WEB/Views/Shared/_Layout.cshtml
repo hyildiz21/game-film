@@ -159,16 +159,16 @@
 
 						<div b-s5id0xetq8="" class="app-header-menu app-header-mobile-drawer align-items-stretch" data-kt-drawer="true" data-kt-drawer-name="app-header-menu" data-kt-drawer-activate="{default: true, lg: false}" data-kt-drawer-overlay="true" data-kt-drawer-width="250px" data-kt-drawer-direction="end" data-kt-drawer-toggle="#kt_app_header_menu_toggle" data-kt-swapper="true" data-kt-swapper-mode="{default: 'append', lg: 'prepend'}" data-kt-swapper-parent="{default: '#kt_app_body', lg: '#kt_app_header_wrapper'}" style="">
 
-
+						 
 							<!--begin::Menu-->
 							<div b-s5id0xetq8="" class="menu menu-rounded menu-column menu-lg-row my-5 my-lg-0 align-items-stretch fw-semibold px-2 px-lg-0" id="kt_app_header_menu" data-kt-menu="true">
 								<!--begin:Menu item-->
 								<div b-s5id0xetq8="" data-kt-menu-trigger="{default: 'click', lg: 'hover'}" data-kt-menu-placement="bottom-start" class="menu-item menu-here-bg menu-lg-down-accordion me-0 me-lg-2">
 									<!--begin:Menu link-->
-									<span b-s5id0xetq8="" id="F2Popup" class="menu-link" data-bs-toggle="modal" data-bs-target="#EmptyCard">
-										<span b-s5id0xetq8="" class="menu-title">OYUNLAR</span>
-										<span b-s5id0xetq8="" class="menu-arrow d-lg-none"></span>
-									</span>
+									
+										<form> <a asp-action="Index" asp-controller="Game" class="menu-link bg-active-body">Oyunlar</a></form>
+									
+									
 									<!--end:Menu link-->
 
 								</div>
@@ -1084,6 +1084,9 @@
     <script src="~/assets/js/custom/utilities/modals/upgrade-plan.js"></script>
     <script src="~/assets/js/custom/utilities/modals/create-app.js"></script>
     <script src="~/assets/js/custom/utilities/modals/users-search.js"></script>
+
+	<script src="~/assets/plugins/custom/draggable/draggable.bundle.js"></script>
+	<script src="~/assets/plugins/custom/formrepeater/formrepeater.bundle.js"></script>
     <!--pop up scripti-->
     <!--end::Custom Javascript-->
     <!--end::Javascript kt_datatable_dom_positioning4 -->
