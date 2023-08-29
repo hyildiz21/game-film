@@ -6,7 +6,7 @@
 
 
 <html>
-<body>
+<body onload="GetPhoneCode()">
 
 
 
@@ -148,7 +148,24 @@ align-items:center;"
     }
 
 
+    function GetPhoneCode() {
+        var movieDiv = document.getElementById("Movie4Div");
+        var movieCarosuel = document.getElementById("MovieCarosuel");
 
+        //JSON File dan selecte data basma
+        fetch('./Movie.json')
+            .then((response) => response.json())
+            .then((json) => {
+                json.forEach((item) => {
+                    console.log(item);
+                    
+                    //data geliyor.
+                   
+                })
+            })
+
+
+    }
 
 </script>
 
