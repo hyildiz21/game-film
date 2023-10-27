@@ -13,8 +13,8 @@ namespace game_film.WEB.Services
 
                 using (var client = new HttpClient())
                 {
-                    client.BaseAddress = new Uri("https://localhost:3000");                 
-                    if (!String.IsNullOrEmpty(token))
+					client.BaseAddress = new Uri("https://localhost:7241/api/"); //local              
+					if (!String.IsNullOrEmpty(token))
                     {
                         client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
                     }

@@ -31,7 +31,7 @@
 </head>
 <!--end::Head-->
 <!--begin::Body-->
-<body id="kt_body" class="app-blank" style="font-family: 'Bree Serif', serif; ">
+<body id="kt_body" class="app-blank" style="font-family: 'Bree Serif', serif; " onload="Test()">
     <!--begin::Theme mode setup on page load-->
     <script>var defaultThemeMode = "light"; var themeMode; if (document.documentElement) { if (document.documentElement.hasAttribute("data-bs-theme-mode")) { themeMode = document.documentElement.getAttribute("data-bs-theme-mode"); } else { if (localStorage.getItem("data-bs-theme") !== null) { themeMode = localStorage.getItem("data-bs-theme"); } else { themeMode = defaultThemeMode; } } if (themeMode === "system") { themeMode = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light"; } document.documentElement.setAttribute("data-bs-theme", themeMode); }</script>
     <!--end::Theme mode setup on page load-->
@@ -213,4 +213,23 @@
         warningClass: "badge badge-info",
         limitReachedClass: "badge badge-success"
     });
+    function Test(key, value) {
+
+        key = document.getElementById("Username").value;
+        value = document.getElementById("Password").value;
+
+
+        const searchParams = new URLSearchParams(window.location.search);
+        searchParams.set(key, value);
+
+        const newRelativePathQuery = window.location.pathname + "?" + searchParams.toString();
+        history.pushState(null, "", newRelativePathQuery);
+
+
+    }
+
+
+
+
+
 </script>

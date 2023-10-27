@@ -6,7 +6,7 @@
 
 
 <html>
-<body onload="GetPhoneCode()">
+<body>
 
 
 
@@ -72,7 +72,7 @@
 
         </div>
 
-        @Html.Partial("~/Views/Partial/PartialMovies.cshtml")
+@*         @Html.Partial("~/Views/Partial/PartialMovies.cshtml")
 
 
         @Html.Partial("~/Views/Partial/PartialSeries.cshtml")
@@ -81,7 +81,7 @@
 
         @Html.Partial("~/Views/Partial/PartialBooks.cshtml")
 
-        @Html.Partial("~/Views/Partial/PartialMusics.cshtml")
+        @Html.Partial("~/Views/Partial/PartialMusics.cshtml") *@
 
 
 
@@ -148,24 +148,6 @@ align-items:center;"
     }
 
 
-    function GetPhoneCode() {
-        var movieDiv = document.getElementById("Movie4Div");
-        var movieCarosuel = document.getElementById("MovieCarosuel");
-
-        //JSON File dan selecte data basma
-        fetch('./Movie.json')
-            .then((response) => response.json())
-            .then((json) => {
-                json.forEach((item) => {
-                    console.log(item);
-                    
-                    //data geliyor.
-                   
-                })
-            })
-
-
-    }
 
 </script>
 

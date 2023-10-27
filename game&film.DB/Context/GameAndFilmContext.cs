@@ -12,6 +12,8 @@ namespace game_film.DB.Context
     {
 
         public virtual DbSet<User> Users { get; set; }
+        public virtual DbSet<Game> Games { get; set; }
+        public virtual DbSet<GameCategory> GameCategories { get; set; }
 
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)

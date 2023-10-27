@@ -1278,13 +1278,13 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.10" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.10">
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.12" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.12">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
-    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.10" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="7.0.10">
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.12" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="7.0.12">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
@@ -1295,10 +1295,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\game&amp;film.DB\game&amp;film.DB.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Business\" />
   </ItemGroup>
 
 </Project>

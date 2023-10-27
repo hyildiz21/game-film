@@ -69,6 +69,8 @@ namespace game_film.WEB.Controllers
                 ViewData["LoginError"] = "Kullanıcı adı veya parola yanlış, tekrar deneyiniz!";
                 return RedirectToAction("Index", "Login", new { message = ViewData["LoginError"].ToString() });
 
+                //ilerisi için eğer ki ilk kez bir user tanımlanacaksa direkt olarak contextte böyle biri yoksa signup a yönlendirililebilir + bunların hepsi apiden gelmeli
+
 
             }
         }
