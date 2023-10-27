@@ -1,4 +1,17 @@
-﻿@{
+﻿@using System.Security.Claims;
+@{
+    //her ikisi de çalışır
+    var role = User.Claims.Where(x => x.Type == ClaimTypes.Role).FirstOrDefault().Value;
+
+    var userRole = ViewData["user"].ToString();
+
+    if (userRole=="2" || role=="2")
+    {
+        Layout = "~/Views/Shared/_Layout_Admin.cshtml";
+    }else
+    {
+        Layout = "~/Views/Shared/_Layout.cshtml";
+    }
 
 
 }

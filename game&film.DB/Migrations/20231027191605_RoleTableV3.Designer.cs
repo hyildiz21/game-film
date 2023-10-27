@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using game_film.DB.Context;
 
@@ -11,9 +12,11 @@ using game_film.DB.Context;
 namespace game_film.DB.Migrations
 {
     [DbContext(typeof(GameAndFilmContext))]
-    partial class GameAndFilmContextModelSnapshot : ModelSnapshot
+    [Migration("20231027191605_RoleTableV3")]
+    partial class RoleTableV3
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

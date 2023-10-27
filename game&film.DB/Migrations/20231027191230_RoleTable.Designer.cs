@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using game_film.DB.Context;
 
@@ -11,9 +12,11 @@ using game_film.DB.Context;
 namespace game_film.DB.Migrations
 {
     [DbContext(typeof(GameAndFilmContext))]
-    partial class GameAndFilmContextModelSnapshot : ModelSnapshot
+    [Migration("20231027191230_RoleTable")]
+    partial class RoleTable
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -65,23 +68,6 @@ namespace game_film.DB.Migrations
                     b.HasKey("categoryId");
 
                     b.ToTable("GameCategories");
-                });
-
-            modelBuilder.Entity("game_film.DB.Models.Role", b =>
-                {
-                    b.Property<int>("roleId")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("roleId"));
-
-                    b.Property<string>("roleName")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("roleId");
-
-                    b.ToTable("Roles");
                 });
 
             modelBuilder.Entity("game_film.DB.Models.User", b =>

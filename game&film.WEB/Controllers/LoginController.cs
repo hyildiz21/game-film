@@ -53,6 +53,7 @@ namespace game_film.WEB.Controllers
                  new Claim(ClaimTypes.Surname,user.lastname ),
                  new Claim(ClaimTypes.NameIdentifier,user.username),
                  new Claim(ClaimTypes.Actor,user.userId.ToString()),
+                 new Claim(ClaimTypes.Role,user.roleId.ToString()),
                 };
 
                 var userIdentity = new ClaimsIdentity(claim, "login");

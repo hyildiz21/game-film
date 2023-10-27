@@ -10,15 +10,19 @@ namespace game_film.WEB.Controllers
     [Authorize]
     public class HomeController : Controller
     {
+        GameAndFilmContext context;
         private readonly ILogger<HomeController> _logger;
 
         public HomeController(ILogger<HomeController> logger)
         {
             _logger = logger;
+            context= new GameAndFilmContext();
         }
 
         public IActionResult Index()
         {
+            var user = context.Users.Where(x=>x.roleId==2).FirstOrDefault().roleId;
+            ViewData["user"] = user;
             return View();
         }
 
